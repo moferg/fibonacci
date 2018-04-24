@@ -11,8 +11,12 @@ namespace Fibonacci
         static void Main(string[] args)
         {
             // Desired output: 1 1 2 3 5 8 13 21 34 55
-            // for loop i < 10
-                // Fibonacci(i);
+            for(int i = 1; i <= 10; i++)
+            {
+                Console.Write(Fibonacci(i) + " ");
+            }
+
+            Console.ReadKey();
         }
 
         // Algorithm: n + (n - 1)
@@ -24,7 +28,7 @@ namespace Fibonacci
                 return 1;
             }
 
-            return Fibonacci(n) + Fibonacci(n - 1);
+            return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
     }
 }
