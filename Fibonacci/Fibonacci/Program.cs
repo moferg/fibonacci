@@ -19,7 +19,7 @@ namespace Fibonacci
             Console.ReadKey();
         }
 
-        // Algorithm: n + (n - 1)
+        // Algorithm: (n - 1) + (n - 2)
         static int Fibonacci(int n)
         {
             //base case
