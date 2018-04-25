@@ -19,15 +19,20 @@ namespace Fibonacci
             Console.ReadKey();
         }
 
-        // Algorithm: (n - 1) + (n - 2)
+        /// <summary>
+        /// Takes one number(n) and returns the Fibonacci sequence number of place n
+        /// </summary>
+        /// <param name="n">The place in the Fibonacci sequence ex. n = 5 returns 5th number in sequence</param>
+        /// <returns>The Fibonacci sequence number in place n</returns>
         static int Fibonacci(int n)
         {
-            //base case
+            // Base case
             if(n == 1 || n == 2)
             {
                 return 1;
             }
 
+            // Algorithm: (n - 1) + (n - 2)
             return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
     }
